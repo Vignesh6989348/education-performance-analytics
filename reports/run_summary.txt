@@ -1,0 +1,7 @@
+Selected model: Extra Trees
+Selection: lowest validation-set MAE, tie-break lower validation RMSE
+Final untouched test metrics: {'MAE': 0.7673675213675211, 'RMSE': 1.2185594261355257, 'R2': 0.8477306887702893}
+Sample prediction: 17.38/20 (estimate, not guaranteed result)
+Sample inputs:
+school sex  age address famsize Pstatus  Medu  Fedu    Mjob    Fjob reason guardian  traveltime  studytime  failures schoolsup famsup paid activities nursery higher internet romantic  famrel  freetime  goout  Dalc  Walc  health  absences  G1  G2
+    MS   M   18       U     GT3       T     4     4 teacher teacher   home   father           1          2         0        no     no   no        yes      no    yes      yes       no       3         2      4     1     4       2         4  17  18

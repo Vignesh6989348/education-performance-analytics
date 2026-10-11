@@ -1,0 +1,106 @@
+{
+  "dataset": "UCI Student Performance, Portuguese course",
+  "source": "https://archive.ics.uci.edu/dataset/320/student+performance",
+  "target": "G3",
+  "prediction_timing": "After G2 is available",
+  "rows_source": 649,
+  "rows_after_duplicate_and_target_check": 649,
+  "duplicates_removed": 0,
+  "features": [
+    "school",
+    "sex",
+    "age",
+    "address",
+    "famsize",
+    "Pstatus",
+    "Medu",
+    "Fedu",
+    "Mjob",
+    "Fjob",
+    "reason",
+    "guardian",
+    "traveltime",
+    "studytime",
+    "failures",
+    "schoolsup",
+    "famsup",
+    "paid",
+    "activities",
+    "nursery",
+    "higher",
+    "internet",
+    "romantic",
+    "famrel",
+    "freetime",
+    "goout",
+    "Dalc",
+    "Walc",
+    "health",
+    "absences",
+    "G1",
+    "G2"
+  ],
+  "split": {
+    "train_fraction": 0.6,
+    "validation_fraction": 0.2,
+    "test_fraction": 0.2,
+    "random_state": 42,
+    "train_rows": 389,
+    "validation_rows": 130,
+    "test_rows": 130
+  },
+  "selection_criterion": "lowest validation-set MAE; ties resolved by lower validation RMSE; test set used only for final reporting",
+  "validation_metrics": [
+    {
+      "model": "Extra Trees",
+      "MAE": 0.7408076923076922,
+      "RMSE": 1.0260819747458703,
+      "R2": 0.8713592982779815
+    },
+    {
+      "model": "Random Forest",
+      "MAE": 0.7578119047619047,
+      "RMSE": 1.1829474855574833,
+      "R2": 0.8290200386389395
+    },
+    {
+      "model": "Linear Regression",
+      "MAE": 0.7926354943519075,
+      "RMSE": 1.1127453979702473,
+      "R2": 0.848711506840156
+    },
+    {
+      "model": "Baseline (mean)",
+      "MAE": 2.196954716234922,
+      "RMSE": 2.876065421106142,
+      "R2": -0.01067565559699113
+    }
+  ],
+  "models": [
+    {
+      "model": "Random Forest",
+      "MAE": 0.7630989723239721,
+      "RMSE": 1.262897932649457,
+      "R2": 0.8364481500321255
+    },
+    {
+      "model": "Extra Trees",
+      "MAE": 0.7673675213675211,
+      "RMSE": 1.2185594261355257,
+      "R2": 0.8477306887702893
+    },
+    {
+      "model": "Linear Regression",
+      "MAE": 0.775966400596683,
+      "RMSE": 1.2197675991283004,
+      "R2": 0.8474285962086697
+    },
+    {
+      "model": "Baseline (mean)",
+      "MAE": 2.4037176191417835,
+      "RMSE": 3.1864930053745173,
+      "R2": -0.04122573893098602
+    }
+  ],
+  "selected_model": "Extra Trees"
+}
