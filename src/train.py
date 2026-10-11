@@ -81,7 +81,7 @@ def run():
     MODEL_DIR.mkdir(exist_ok=True); joblib.dump(best, MODEL_DIR/"selected_model.joblib")
     sample = X_test.iloc[[0]]
     estimate = float(best.predict(sample)[0])
-    summary = f"Selected model: {winner}\nSelection: lowest validation-set MAE, tie-break lower validation RMSE\nFinal untouched test metrics: {regression_metrics(y_test, predictions[winner])}\nSample prediction: {estimate:.2f}/20 (estimate, not guaranteed result)\nSample inputs:\n{sample.to_string(index=False)}\n"
+    summary = f"Selected model: {winner}\nSelection: lowest validation-set MAE, tie-break lower validation RMSE\nFinal untouched test metrics: {regression_metrics(y_test, predictions[winner])}\nDemonstration prediction on a held-out public-dataset record: {estimate:.2f}/20 (estimate, not guaranteed result; row-level input values are intentionally not written to this report)\n"
     (ROOT/"reports"/"run_summary.txt").write_text(summary)
     print(comparison.to_string(index=False, float_format=lambda x: f"{x:.3f}"))
     print(f"\nSelected: {winner}\nExample G3 estimate: {estimate:.2f}/20\nOutputs: reports/ and models/selected_model.joblib")

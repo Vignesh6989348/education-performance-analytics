@@ -2,6 +2,8 @@
 
 A reproducible regression project estimating Portuguese-course final grade (**G3**, scale 0–20) from the UCI Student Performance dataset. It demonstrates acquisition, data checks, EDA, pipelines, model comparison, interpretation, and prediction.
 
+Project overview site: [`docs/index.html`](docs/index.html) (configured for GitHub Pages from the `/docs` folder on `main`).
+
 ## Dataset and design
 - **Source:** [UCI Student Performance](https://archive.ics.uci.edu/dataset/320/student+performance), DOI [10.24432/C5TG7T](https://doi.org/10.24432/C5TG7T), CC BY 4.0. Citation: Cortez, P. (2008), *Student Performance*.
 - **Subset:** Portuguese course (`student-por.csv`), 649 rows; source has 33 columns including target.
