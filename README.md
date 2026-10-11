@@ -14,6 +14,39 @@ Project overview site: [`docs/index.html`](docs/index.html) (configured for GitH
 
 Raw data is downloaded from UCI on first run; no synthetic observations are used.
 
+## 🌐 Live Project Demo
+
+<p align="center">
+  <a href="https://eduperf-g7avvd4w.manus.space/">
+    <img src="https://img.shields.io/badge/🚀_Launch-Live_Demo-00C853?style=for-the-badge&logoColor=white" alt="Launch Live Demo"/>
+  </a>
+</p>
+
+<p align="center">
+  <b>Education Performance Analytics — Student Success Prediction</b>
+  <br/>
+  An interactive web experience for exploring student performance data and estimating final academic grades using machine learning.
+</p>
+
+<p align="center">
+  <a href="https://eduperf-g7avvd4w.manus.space/">
+    <b>🔗 Open Live Website →</b>
+  </a>
+</p>
+
+### ✨ Explore the Platform
+
+* 📊 **Model Comparison** — Review the performance of the evaluated regression models.
+* 🎯 **Student Grade Estimation** — Explore the prediction interface for estimating final course grades.
+* 📈 **Data-Driven Insights** — Understand how historical academic data can support student performance analysis.
+* 🧠 **Machine Learning Workflow** — Explore the project’s approach to data preparation, model training, and evaluation.
+
+> **Note:** Predictions are estimates based on historical data and should not be treated as guaranteed academic outcomes.
+
+**🔗 Live Demo:** https://eduperf-g7avvd4w.manus.space/
+**📦 Source Code:** https://github.com/Vignesh6989348/education-performance-analytics
+
+
 ## Setup
 Python 3.9+:
 ```bash
